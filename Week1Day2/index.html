@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            background-color:rgba(255, 80, 114, 0.3);
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    
+        h1 {
+            text-align: center;
+        }
+    
+        input {
+            margin-top: 5px;
+            height: 50px;
+            width: 500px;
+            font-size: 16px;
+            border-radius: 25px;
+            background-color: transparent white;
+            margin-bottom: 20px;
+            border: none;
+            text-align: center;
+        }
+    
+        .circle {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border:none;
+            background-color: rgb(245, 248, 248);
+            margin-bottom: 10px;
+            margin-left: 10px; 
+           }
+    
+        #search {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .circles {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .circle img{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+           
+        }
+    </style>
+    
+</head>
+
+<body>
+    <img src="google.png" alt="">
+
+    <div id="search">
+        <input type="text" placeholder="Search Google or type a url">
+    </div>
+
+    <div class="circles">
+        <div class="circle"><img src="pcb.png" alt=""></div>
+        <div class="circle"><img src="bcci.png" alt=""></div>
+        <div class="circle"><img src="hacker.png" alt=""></div>
+        <div class="circle"><img src="leet.png" alt=""></div>
+        <div class="circle"><img src="git.png" alt=""></div>
+    </div>
+</body>
+
+</html>
