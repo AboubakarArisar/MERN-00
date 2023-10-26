@@ -1,0 +1,92 @@
+body {
+    background-color: white;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-right: 400px;
+}
+.icons button {
+    background-color: transparent;
+    border: none;
+}
+.icons button .repo {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.content .right .image{
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgb(228, 217, 217);
+    border-radius: 50%;
+    background-image: url(./assets/ab.jpg);
+    background-repeat: no-repeat;
+}
+
+h2 {
+    margin-right: 20px;
+}
+h4 {
+    margin-top: -11px;
+    font-weight: 200;
+    color: rgb(10, 8, 8);
+}
+.content .right {
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.content .right button {
+    background-color:#F6F8FA;
+    color: #1F2328;
+    border-radius: 5px;
+    height: 32px;
+    width: 396px;
+    
+}
+.following span {
+    font-weight: 700;
+}
+.right .insta a {
+    text-decoration: none;
+    color: black;
+}
+.right .linkedin a {
+    text-decoration: none;
+    color: black;
+}
+.left {
+    width: 75%;
+    border: 2px solid rgb(204, 201, 201);
+    border-radius: 5px;
+    height: 100vh;
+}
+.left a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 100;
+}
+.left h1{
+    text-align: center;
+    color: blue;
+}
+.left h3 {
+    line-height: 30px;
+    padding: 90px;
+    color: blue;
+}
+.left p {
+    text-align: justify;
+    padding-left: 400px;
+    line-height: 50px;
+    font-weight: 500;
+}
