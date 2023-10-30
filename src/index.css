@@ -1,0 +1,26 @@
+div {
+  background-color: lightgrey;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.container {
+  border: 2px solid green;
+}
+span {
+  font-size: 22;
+  font-weight: bolder;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
