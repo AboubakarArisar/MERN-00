@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.container .items {
+    background-color: lightcyan;
+    border: 2px solid black;
+    height: 100px;
+}
+#item-1 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+}
+#item-3 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+#item-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#item-1 .nested {
+    background-color: lightgreen;
+    border: 2px solid black;
+    height: 100px;
+}
+#item-3 .nested {
+    background-color: lightgreen;
+    border: 2px solid black;
+    height: 100px;
+}
