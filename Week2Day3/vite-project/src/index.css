@@ -1,0 +1,57 @@
+body {
+    background-color: whitesmoke;
+}
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+  }
+  .circle {
+    width: 500px;
+    height: 500px;
+    border: 2px solid silver;
+    border-radius: 50%;
+  }
+  .circles {
+    border: 1px solid silver;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  
+  }
+  .items {
+   margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid silver;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .button button {
+    width:120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(174, 188, 19, 0.6);
+    border: transparent;
+  }
+
+  .history {
+    height: 100vh;
+    border:1px solid silver;
+    border-radius: 5px;
+  }
