@@ -1,5 +1,8 @@
 body {
-    background-color: whitesmoke;
+  background-color: #fadcdc;
+}
+*{
+  color: black;
 }
 h1 {
     text-align: center;
@@ -54,4 +57,24 @@ h1 {
     height: 100vh;
     border:1px solid silver;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  table {
+    border: 2px solid silver;
+    width: 500px;
+    text-align: center;
+  }
+  th, tr, td {
+    border: 1px solid silver;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 98vh;
+    overflow-y: scroll;
+    border: 1px solid silver;
+    padding: 10px;
   }
