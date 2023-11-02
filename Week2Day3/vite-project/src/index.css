@@ -38,10 +38,12 @@ h1 {
     height: 60px;
     border-radius: 50%;
     border: 2px solid silver;
+    cursor: pointer;
   }
   .button {
     display: flex;
     justify-content: center;
+    gap: 20px;
     align-items: center;
     margin: 20px;
   }
@@ -51,6 +53,7 @@ h1 {
     border-radius: 10px;
     background-color: rgba(174, 188, 19, 0.6);
     border: transparent;
+    cursor:pointer;
   }
 
   .history {
@@ -77,4 +80,13 @@ h1 {
     overflow-y: scroll;
     border: 1px solid silver;
     padding: 10px;
+  }
+  .end-con {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
