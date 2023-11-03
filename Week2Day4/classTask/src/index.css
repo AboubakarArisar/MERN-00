@@ -80,9 +80,6 @@ h1 {
   height: 65%;
   border: none;
   margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow-x: auto;
   overflow-y: auto;
 }
@@ -91,6 +88,7 @@ table {
   width: 70%;
   text-align: center;
   border-collapse: collapse;
+  margin-left: 60px;
 }
 th {
   font-weight: 700;
