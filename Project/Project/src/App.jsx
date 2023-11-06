@@ -1,27 +1,26 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
+import "./App.css";
 function Login() {
   return (
     <>
-    <div className="container">
-      <div className="box">
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="********" />
-        <button>Login</button>
+      <div className="container">
+       
+        <div className="box">
+          <input type="text" placeholder="username" />
+          <input type="password" placeholder="********" />
+          <button>Login</button>
+        </div>
       </div>
-    </div>
     </>
-  )
+  );
 }
 function App() {
-
-
   return (
     <>
-     <Login />
+      <Login />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

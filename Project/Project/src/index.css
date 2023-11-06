@@ -4,7 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgreen;
+  gap : 10px;
+  /* background-color: rgb(217, 247, 217); */
+  background-image: url(https://shorturl.at/auDHV);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .box {
   display: flex;
@@ -12,23 +16,30 @@
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  background-color: rgb(167, 146, 146);
-  width: 50%;
+  background-color: #fff;
+  width: 30%;
   border-radius: 6px;
-  height: 50vh;
+  height: 60vh;
+}
+
+.con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 input {
   width: 200px;
   height: 40px;
   border: none;
-  background-color: lightblue;
+  background-color: rgb(248, 247, 246);
   border-radius: 5px;
 }
 button {
-  background-color: rgb(91, 190, 177);
-  width: 90px;
-  height: 30px;
+  background-color: rgb(12, 66, 59);
+  width: 200px;
+  height: 40px;
   border-radius: 5px;
   font-weight: 700;
   border: none;
+  color: white;
 }
