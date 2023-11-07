@@ -9,7 +9,7 @@ function Todo() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (task.trim() === "") {
+    if (task=== "") {
       alert("Task name is required.");
     } else {
       const newTodo = { task: task, status: status, date: date };
@@ -33,7 +33,7 @@ function Todo() {
   return (
     <>
       <div className="container">
-        <h1 className="todo-heading">TODO Application</h1>
+        <h1 className="todo-heading">TODO APP</h1>
         <div className="form">
           <form onSubmit={handleSubmit}>
             <input
