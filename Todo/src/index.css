@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #F1EAFF;
+}
+.content{
+  background-color: #E5D4FF;
+}
+.list {
+  background-color: #DCBFFF;
+}
+ul li button:hover {
+  background-color: rgb(248 23 3 / var(--tw-bg-opacity));
+
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #D0A2F7;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.hello:hover {
+  background-color: rgb(248 23 3 / var(--tw-bg-opacity));
+}
