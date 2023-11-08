@@ -35,6 +35,7 @@ function Todo() {
       <div className="container">
         <h1 className="todo-heading">TODO APP</h1>
         <div className="form">
+  
           <form onSubmit={handleSubmit}>
             <input
               required
@@ -54,11 +55,13 @@ function Todo() {
             >
               <option value="Incomplete">Incomplete</option>
               <option value="complete">Complete</option>
+              <option value="pending">Pending</option>
             </select>
             <button type="submit">Submit</button>
           </form>
         </div>
         <div className="list">
+
           <table className="todo-table">
             <thead>
               <tr>

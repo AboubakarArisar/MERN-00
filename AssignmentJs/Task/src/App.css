@@ -56,7 +56,7 @@ select:hover {
 
 select {
     height: 40px;
-    width: 120px;
+    width: 130px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
@@ -65,7 +65,6 @@ select {
     background-color: #9BBEC8;
     cursor: pointer;
 }
-
 
 input {
     width: 250px;
@@ -105,11 +104,19 @@ input {
   
 }
 
-.todo-table th, .todo-table td {
+.todo-table th{
+    border: 2px solid #6e9db9;
+    padding: 8px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+}
+.todo-table td {
+    
     border: 2px solid #6e9db9;
     padding: 8px;
     font-weight: 500;
-    text-align: left;
+    text-align: center  ;
 }
 
 .todo-table th {
