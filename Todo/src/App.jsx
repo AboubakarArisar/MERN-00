@@ -29,13 +29,13 @@ const App = () => {
   return (
     <>
     <div className="content">
-      <h1 className='bg-black  text-white p-5 text-5xl font-bold text-center'>My Todo List</h1>
-      <form className='flex justify-center items-center'
+      <h1 className='bg-black  text-white p-5 text-5xl font-bold text-center mainHeading'>My Todo List</h1>
+      <form className='contentForm flex justify-center items-center'
       onSubmit={(e) => {
         e.preventDefault();
         handleAddTask();
       }}>
-        <input type="text" className='text-2xl border-zinc-800 border-2 m-5 px-4 py-2 rounded bg-transparent' value={title} onChange={(e) => {
+        <input type="text" className='text-red-600 md:w-32 lg:w-48 text-2xl border-zinc-800 border-2 m-5 px-4 py-2 rounded bg-transparent' value={title} onChange={(e) => {
           setTitle(e.target.value);
         }} placeholder='Enter Task here' />
         <input type="text" className='text-2xl border-zinc-800 border-2 m-5 px-4 py-2 rounded bg-transparent' value={desc} onChange={(e) => {
@@ -66,10 +66,12 @@ const App = () => {
                 <button className='bg-red-400 text-white rounded font-bold px-4 py-2 mb-5' onClick={()=>handleDelete()}>Delete</button>
                 </div>
               </li>
+              
             ))}
           </ul>
+          
         ) : (
-          <h2>No Task Available 🤔</h2>
+          <h2 className='font-bold px-5 py-2'>No Task Available 🤔</h2>
         )}
       </div>
       {editingIndex !== null && (
