@@ -1,0 +1,54 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f6f9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #394867;
+}
+.button {
+  background-color: #394867;
+  
+}
+.button button {
+  height: 50px;
+  width: 150px;
+  margin-top: 50px;
+}
+.button button:hover {
+  background-color: rgb(198, 134, 32);
+}
+.content {
+  height: 65vh;
+  width: 50vh;
+  background-color: #212a3e;
+  margin-top: -60px;
+}
+label::after {
+  content: ":";
+}
+table {
+  border: 2px solid white;
+  margin: 10px;
+}
+thead,
+tr,
+th,
+td {
+  border: 2px solid white;
+  padding: 5px;
+}
+.amount::after {
+  content: "$";
+}
+.table-parent {
+  overflow-y: scroll;
+}
