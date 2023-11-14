@@ -32,6 +32,7 @@ function Todo() {
 
   return (
     <>
+    
       <div className="container">
         <h1 className="todo-heading">TODO APP</h1>
         <div className="form">

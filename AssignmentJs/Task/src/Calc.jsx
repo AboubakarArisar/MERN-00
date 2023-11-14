@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import './calc.css';
+import './Nav'
 
 const Calc = () => {
   const [number1, setNumber1] = useState(0);
@@ -50,6 +51,7 @@ const Calc = () => {
   return (
     <>
     <div className="container">
+   
     <div className="calc-container">
       <h1 className='text-center font-semibold  text-2xl'>Simple Calculator</h1>
       <hr />
