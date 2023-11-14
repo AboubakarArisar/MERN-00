@@ -47,7 +47,7 @@ function Todo() {
               }}
             />
 
-            <select
+            <select className="mt-2"
               value={status}
               onChange={(event) => {
                 setStatus(event.target.value);
@@ -57,7 +57,7 @@ function Todo() {
               <option value="complete">Complete</option>
               <option value="pending">Pending</option>
             </select>
-            <button type="submit">Submit</button>
+            <button type="submit" className="mt-2 ml-2">Submit</button>
           </form>
         </div>
         <div className="list">

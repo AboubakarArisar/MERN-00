@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
 }
 .container {
@@ -38,8 +38,8 @@
 button {
     width: 100px;
     height: 40px;
-    background-color: #9BBEC8;
-    border: none;
+    background-color: #f6fcfe;
+    border: none;   
     border-radius: 5px;
     font-size: 16px;
     margin: 5px;
@@ -66,7 +66,7 @@ select {
     cursor: pointer;
 }
 
-input {
+input{
     width: 250px;
     height: 40px;
     border-radius: 5px;
