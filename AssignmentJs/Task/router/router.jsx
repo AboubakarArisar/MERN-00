@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Todo from '../src/Todo';
 import Calc from '../src/Calc';
-import Nav from '../src/Nav'
+import Nav from '../src/Nav';
+import {StWatch} from "../src/StWatch";
 import { Navbar,Footer } from "../src/Nav";
+import Magic from "../src/Magic";
 const AppRoutes = () => {
   return (
     <Router>
@@ -12,10 +14,12 @@ const AppRoutes = () => {
           <Route path="/" element={<Nav />} />
           <Route path="/Todo" element={<Todo />} />
           <Route path="/Calc" element={<Calc />} />
+          <Route path="/StWatch" element={<StWatch />} />
+          <Route path="/Magic" element={<Magic />} />
         </Routes>
         <Footer/>
       </div>
     </Router>
   );
-};
+};  
 export default AppRoutes;

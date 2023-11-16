@@ -58,7 +58,7 @@ function Todo() {
               <option value="complete">Complete</option>
               <option value="pending">Pending</option>
             </select>
-            <button type="submit" className="mt-2 ml-2">Submit</button>
+            <button type="submit" className="mt-2 ml-2 bg-blue-200">Submit</button>
           </form>
         </div>
         <div className="list">
