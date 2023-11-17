@@ -5,6 +5,7 @@ import Nav from '../src/Nav';
 import {StWatch} from "../src/StWatch";
 import { Navbar,Footer } from "../src/Nav";
 import Magic from "../src/Magic";
+import Colors from "../src/Colors";
 const AppRoutes = () => {
   return (
     <Router>
@@ -16,6 +17,7 @@ const AppRoutes = () => {
           <Route path="/Calc" element={<Calc />} />
           <Route path="/StWatch" element={<StWatch />} />
           <Route path="/Magic" element={<Magic />} />
+          <Route path="/Colors" element={<Colors />} />
         </Routes>
         <Footer/>
       </div>

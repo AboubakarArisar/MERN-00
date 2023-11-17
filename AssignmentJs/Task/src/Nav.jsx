@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
-      <header className="flex justify-between  bg-teal-200 ">
+      <header className="flex justify-between bg-[#1a3d50]">
         <div className="logo  px-2 py-5">
           <span className="text-yellow-600 font-semibold text-2xl">Pindari Coders</span>
         </div>
@@ -14,6 +14,7 @@ export const Navbar = () => {
           <Link to='/Calc' className="m-2  hover:text-white delay-100 active:underline" href="">Calculator</Link>
           <Link to='/StWatch' className="m-2  hover:text-white delay-100 active:underline" href="">Stop Watch</Link>
           <Link to='/Magic' className="m-2  hover:text-white delay-100 active:underline" href="">Magic Ball</Link>
+          <Link to='/Colors' className="m-2  hover:text-white delay-100 active:underline" href="">Colors</Link>
         </nav>
         </div>
       </header>
