@@ -9,7 +9,12 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgb(43, 43, 43);
+    font-family: 'Poppins', sans-serif;
 }
+
+/* --------------------------------
+        sign up and login css
+   --------------------------------*/
 .signup-container {
     width: 100vw;
     height: 100vh;
@@ -26,3 +31,26 @@ body {
 .signup-right {
     padding-left: 150px;
 }
+.signup-right ul li {
+    line-height: 30px;
+}
+.signup-right ul li::marker {
+    color: white;
+    font-size: 15px;
+  }
+  .ruler {
+    border: 1px dashed rgb(68, 68, 68);
+  }
+  /* --------------------------------
+        Contacut us css
+  --------------------------------*/
+ span {
+    color: rgb(214, 150, 103);
+ }
+ .title {
+    color: rgb(153, 153, 153);
+ }
+ a {
+    color: rgb(214, 150, 103);
+    text-decoration: none;
+ }

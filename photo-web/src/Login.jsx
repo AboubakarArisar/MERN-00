@@ -1,11 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-
-import './App.css';
-const SignUp = () => {
+const login = () => {
   return (
     <>
-    <div className="signup-container">
+     <div className="signup-container">
         <div className="signup-content grid grid-cols-2">
             <div className="signup-right flex flex-col justify-center items-start">
             <p className='text-yellow-300 text-xl font-semibold'>Pindari</p>
@@ -18,21 +16,19 @@ const SignUp = () => {
             <p className='text-white text-xl'>Access your dashboard and many more</p>
             </div>
             <div className="signup-left flex flex-col gap-2 text-white justify-center items-start">
-                    <h2 className='text-2xl'>Create Account</h2>
-                    <p className='font-medium'>Hey, there Register here and get started.</p>
+                    <h2 className='text-2xl'>Login</h2>
+                    <p className='font-medium'>Welcome back. Please enter your details.</p>
                     <form className='flex flex-col w-full gap-4'>
                         <label htmlFor="email">Email address</label>
                         <input type="email" name='email' placeholder='Enter your email' className='p-[10px] w-full bg-[#323232]' />
                         
-                        <label htmlFor="full-name">Full Name</label>
-                        <input type="text" name='full-name' placeholder='Example: pindari coders' className='p-[10px] w-full bg-[#323232]' />
-                        
+                       
                         <label htmlFor="password">Password</label>
                         <input type="password" name='password' placeholder='Enter your password' className='p-[10px] w-full bg-[#323232]' />
-                        <button type="submit" className='p-[10px] bg-[#195D51] w-full rounded hover:bg-[#225239]'>Sign Up</button>
+                        <button type="submit" className='p-[10px] bg-[#195D51] w-full rounded hover:bg-[#225239]'>Login</button>
                     </form>
                     <button className='p-[10px] bg-[#195D51] w-full rounded flex justify-center items-center gap-2'>
-                      <img src="../public/google.png" className='w-5 h-5 bg-[#195D51] hover:bg-[#225239]' alt="Google" />Sign in With Google</button>
+                      <img src="../public/google.png" className='w-5 h-5 hover:bg-[#225239]' alt="Google" />Sign in With Google</button>
                     
             </div>
                     
@@ -43,4 +39,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp
+export default login

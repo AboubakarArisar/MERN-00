@@ -12,6 +12,8 @@ export const Navbar = () =>{
         <nav className="flex gap-3">
           <Link to='/' className="text-white  font-medium hover:text-yellow-300">Home</Link>
           <Link to='/SignUp' className="text-white  font-medium hover:text-yellow-300">SignUp</Link>
+          <Link to='/Login' className="text-white  font-medium hover:text-yellow-300">Login</Link>
+          <Link to='/Contact' className="text-white  font-medium hover:text-yellow-300">Contact Us</Link>
         </nav>
       </div>
     </header>
