@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    background-color: rgb(43, 43, 43);
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+}
+.signup-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+}
+.signup-content {
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(43, 43, 43);
+}
+.signup-right {
+    padding-left: 150px;
+}
