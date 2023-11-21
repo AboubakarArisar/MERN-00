@@ -4,7 +4,7 @@ const login = () => {
   return (
     <>
       <div className="signup-container">
-        <div className="signup-content grid grid-cols-2 sm:grid-cols-1">
+        <div className="signup-content grid grid-cols-2">
           <div className="signup-right flex  flex-col  justify-center items-start">
             <p className="text-yellow-300 text-xl font-semibold">Pindari</p>
             <h2 className="text-white text-2xl font-bold">
