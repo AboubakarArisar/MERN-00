@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "backend first project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node sever.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "aboubakar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1"
+  }
+}
