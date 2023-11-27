@@ -4,13 +4,13 @@ const login = () => {
   return (
     <>
       <div className="signup-container">
-        <div className="signup-content grid grid-cols-2">
-          <div className="signup-right flex  flex-col  justify-center items-start">
-            <p className="text-yellow-300 text-xl font-semibold">Pindari</p>
-            <h2 className="text-white text-2xl font-bold">
+        <div className="signup-content lg:grid lg:grid-cols-2 sm:flex sm:flex-col sm:gap-[20px] sm:justify-center sm:items-center ">
+          <div className="signup-right sm:px-5 lg:flex  lg:flex-col  lg:justify-center lg:items-start sm:w-full sm:flex sm:justify-between sm:flex-col ">
+            <h3 className="text-yellow-300 text-xl font-semibold sm-text-center sm:px-5">Pindari</h3>
+            <h2 className="text-white lg:text-2xl lg:font-bold sm:text-xl sm:font-normal">
               Explore Your Creativity
             </h2>
-            <ul className="text-white  py-5">
+            <ul className="text-white  lg:py-5 sm:py-2 w-full">
               <li> Bookmark your readings</li>
               <li>Comment in your favourite post</li>
               <li>Register in your upcoming contests</li>
@@ -19,12 +19,12 @@ const login = () => {
               Access your dashboard and many more
             </p>
           </div>
-          <div className="signup-left flex flex-col gap-2 text-white justify-center items-start">
+          <div className="signup-left lg:flex lg:flex-col lg:gap-2 sm:my-2 sm:flex sm:flex-col sm:gap-2 sm:w-full text-white justify-center items-start">
             <h2 className="text-2xl">Login</h2>
             <p className="font-medium">
               Welcome back. Please enter your details.
             </p>
-            <form className="flex flex-col w-2/3 gap-4">
+            <form className="lg:flex lg:flex-col lg:w-2/3 lg:gap-4 sm:flex sm:flex-col sm:w-1/3">
               <label htmlFor="email">Email address</label>
               <input
                 type="email"
@@ -47,7 +47,7 @@ const login = () => {
                 Login
               </button>
             </form>
-            <button className="p-[10px] bg-[#195D51] w-2/3 rounded flex justify-center items-center gap-2">
+            <button className="p-[10px] bg-[#195D51] lg:w-2/3 sm:1/3 sm:gap-2 rounded flex justify-center items-center lg:gap-2">
               <img
                 src="../public/google.png"
                 className="w-5 h-5 hover:bg-[#225239]"

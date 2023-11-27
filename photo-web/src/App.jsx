@@ -26,7 +26,16 @@ export const Home=()=> {
 
   return (
     <>
-    
+    <div className="home-container lg:flex lg:justify-center lg:items-center">
+    <div className="home-content lg:grid lg:grid-cols-2 lg:w-[80%]">
+      <div className="home-right lg:w-1/2 p-5 rounded border-[2px solid white]">
+        <h1 className="text-white ">i am right</h1>
+      </div>
+      <div className="home-left lg:w-1/2 p-5 rounded border-[2px solid white]">
+    <h1 className="text-white ">i am left</h1>
+      </div>
+      </div>
+    </div>
     </>
   )
 }

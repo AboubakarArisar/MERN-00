@@ -29,7 +29,7 @@ body {
   background-color: rgb(43, 43, 43);
 }
 .signup-right {
-  padding-left: 150px;
+  /* padding-left: 150px; */
 }
 .signup-right ul li {
   line-height: 30px;

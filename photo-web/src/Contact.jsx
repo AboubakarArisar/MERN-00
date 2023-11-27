@@ -3,9 +3,9 @@ import React from 'react';
 const Contact = () => {
   return (
     <>
-      <div className="contact-container grid grid-cols-2 gap-2 p-10">
-        <div className="contact-left flex flex-col ">
-          <div className="left-content  justify-center items-center flex-wrap p-[40px] ">
+      <div className="contact-container grid lg:grid-cols-2 sm:grid-cols-1 gap-2 p-10">
+        <div className="contact-left lg:flex lg:flex-col sm:grid sm:grid-cols-1">
+          <div className="left-content  justify-center items-center flex-wrap lg:p-[40px] sm:[20px]">
             <p className="text-yellow-300">Contact Us</p>
             <h1 className="text-white text-3xl leading-normal">
               Have a<span> Project </span>

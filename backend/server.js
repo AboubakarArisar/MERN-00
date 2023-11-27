@@ -10,42 +10,56 @@ async function connectDatabase() {
 }
 connectDatabase().then((result)=>console.log(result)).catch((err)=> console.log(err));
 
-const studentSchema = new mongoose.Schema({
+const taskSchema = new mongoose.Schema({
     name:String,
-    age:Number,
-    semester:Number
+    desc:String,
+    status:Boolean
 });
-const Student = mongoose.model('Student',studentSchema);
+const Task = mongoose.model('Task' , taskSchema);
 router.all('/', (req,res)=>{
     res.json(({
         success:true,
-        message:"student  server is live 🐴 🐤 🐈"
-    }))
-})
-router.post('/student',(req,res)=>{
-    const {name,age,semester} = req.body;
-    const studentCreated = new Student({name:name , age:age, semester:semester});
-    studentCreated.save();
-    res.json(({
-        success:true,
-        studentCreated
+        message:"Todo  server is live"
     }))
 })
 
-router.delete('/student/:id',async(req,res)=>{
-    const {id} = req.params;
-    const deletedData  = await Student.findByIdAndDelete(id);
+router.post('/Task',async (req,res)=>{
+    const {name,desc,status} = req.body;
+    const taskCreated = new Task({name:name , desc:desc, status:status});
+    await taskCreated.save();
+    res.json(({
+        success:true,
+        taskCreated
+    }))
+})
+
+
+
+
+ router.delete('/Task/:id',async(req,res)=>{
+    const id = req.params.id;
+    await Task.findByIdAndDelete(id);
     res.json({
         success: true,
-        deletedData
+        message:"user deleted successfully"
     })
 })
 
-router.get('/student',async (req,res)=>{
-    const student  = await Student.find(); 
+router.get('/Task',async (req,res)=>{
+    const task  = await Task.find(); 
     res.json({
         success: true,
-        student
+        task
+    })
+})
+
+router.get('/Task/status/:status',async (req,res)=>{
+    const status = req.params.status == "true" ? true: false;
+    // console.log(typeof(status))
+    const task  = await Task.find({status}); 
+    res.json({
+        success: true,
+        task
     })
 })
 app.use(router);
