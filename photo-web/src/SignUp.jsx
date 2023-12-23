@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './App.css';
+import "./App.css";
 const SignUp = () => {
   return (
     <>
@@ -20,18 +20,20 @@ const SignUp = () => {
               Access your dashboard and many more
             </p>
           </div>
-          <div className="signup-left flex flex-col gap-2 text-white justify-center items-start p-[20px]">
-            <h2 className="text-2xl">Create Account</h2>
-            <p className="font-medium">
-              Hey, there Register here and get started.
-            </p>
-            <form className="flex flex-col w-2/3 gap-4">
+          <div className="signup-left flex flex-col gap-2 text-white justify-center items-center p-5 bg-[#323232]">
+            <div className="flex flex-col justify-center p-5 items-start">
+              <h2 className="text-2xl font-semibold">Create Account</h2>
+              <p className="font-medium">
+                Hey, there Register here and get started.
+              </p>
+            </div>
+            <form className="flex flex-col w-2/3 gap-4 p-8">
               <label htmlFor="email">Email address</label>
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email"
-                className="p-[15px] w-full bg-[#323232]"
+                className="p-[15px] w-full rounded bg-[#2B2B2B]"
               />
 
               <label htmlFor="full-name">Full Name</label>
@@ -39,7 +41,7 @@ const SignUp = () => {
                 type="text"
                 name="full-name"
                 placeholder="Example: pindari coders"
-                className="p-[15px] w-full bg-[#323232]"
+                className="p-[15px] w-full rounded bg-[#2B2B2B]"
               />
 
               <label htmlFor="password">Password</label>
@@ -47,7 +49,7 @@ const SignUp = () => {
                 type="password"
                 name="password"
                 placeholder="Enter your password"
-                className="p-[15px] w-full bg-[#323232]"
+                className="p-[15px] w-full rounded bg-[#2B2B2B] "
               />
               <button
                 type="submit"
@@ -56,14 +58,6 @@ const SignUp = () => {
                 Sign Up
               </button>
             </form>
-            <button className="p-[10px] bg-[#195D51] w-2/3 rounded flex justify-center items-center gap-2">
-              <img
-                src="../public/google.png"
-                className="w-5 h-5 bg-[#195D51] hover:bg-[#225239]"
-                alt="Google"
-              />
-              Sign in With Google
-            </button>
           </div>
         </div>
       </div>
