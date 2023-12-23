@@ -29,15 +29,15 @@ router.post('/Task',async (req,res)=>{
     await taskCreated.save();
     res.json(({
         success:true,
-        taskCreated
+        message:"Task has been created successfully"
     }))
-})
+}) 
 
 
 
 
  router.delete('/Task/:id',async(req,res)=>{
-    const id = req.params.id;
+      const id = req.params.id;
     await Task.findByIdAndDelete(id);
     res.json({
         success: true,
