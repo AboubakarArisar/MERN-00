@@ -35,11 +35,11 @@ const Footer = () => {
   return (
     <>
       <hr className="opacity-10" />
-      <footer className="flex justify-between items-center bg-[#2B2B2B] text-white p-4 h-24">
+      <footer className="flex lg:flex-row mg:flex-row xsm:flex-col  md:justify-between xsm:justify-center xsm:gap-6 md:gap-2 items-center bg-[#2B2B2B] text-white p-4 md:h-24">
         <div className="w-1/3 flex justify-center items-center">
           <p>&copy; {new Date().getFullYear()} Pindari Coders</p>
         </div>
-        <div className="space-x-4 w-1/3 flex justify-center items-center gap-2">
+        <div className="md:space-x-4 md:w-1/3 xsm:w-full flex justify-center items-center xsm:gap-12 md:gap-2">
           <a
             href="https://github.com/"
             target="_blank"
@@ -62,7 +62,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </a>
         </div>
-        <div className="w-1/3 flex justify-center items-center">
+        <div className="lg:w-1/3 xsm:w-full xsm:px-10  flex justify-center items-center">
           <p>
             {data && data.length > 0
               ? `${data[0].quote} -  ${data[0].author}`

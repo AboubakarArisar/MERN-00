@@ -1,42 +1,97 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 
 export const Navbar = () => {
+  const [isNavVisible, setNavVisibility] = useState(false);
+
+  const toggleNavVisibility = () => {
+    setNavVisibility(!isNavVisible);
+  };
+
   return (
     <>
-      <header className="flex justify-between items-center p-5  m-5 ">
+      <header className="flex justify-between items-center p-5 m-5">
         <div className="logo">
           <h3 className="text-2xl text-yellow-300 font-semibold cursor-pointer">
             Pindaris
           </h3>
         </div>
         <div className="nav">
-          <nav className="flex gap-5">
-            <Link
-              to="/"
-              className="text-white font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50"
+          {!isNavVisible && (
+            <button
+              onClick={toggleNavVisibility}
+              className="text-yellow-300 font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50 xsm:block md:hidden"
             >
-              Home
-            </Link>
-            <Link
-              to="/SignUp"
-              className="text-white font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50"
-            >
-              SignUp
-            </Link>
-            <Link
-              to="/Login"
-              className="text-white font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50"
-            >
-              Login
-            </Link>
-            <Link
-              to="/Contact"
-              className="text-white  font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50"
-            >
-              Contact Us
-            </Link>
-          </nav>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                />
+              </svg>
+            </button>
+          )}
+          {isNavVisible && (
+            <div className="modal-overlay">
+              <div className="modal-container">
+                <div className="modal">
+                  <button
+                    onClick={() => setNavVisibility(false)}
+                    className="text-yellow-300 font-medium  p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50 absolute top-[-35px] right-0 mt-2 mr-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M7.5 7.5h-.75A2.25 2.25 0 0 0 4.5 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25v-7.5a2.25 2.25 0 0 0-2.25-2.25h-.75m0-3-3-3m0 0-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 0 1 2.25 2.25v7.5a2.25 2.25 0 0 1-2.25 2.25h-7.5a2.25 2.25 0 0 1-2.25-2.25v-.75"
+                      />
+                    </svg>
+                  </button>
+                  <nav className="flex flex-col gap-5 text-center">
+                    <Link
+                      to="/"
+                      className="text-white font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      to="/SignUp"
+                      className="text-white font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50"
+                    >
+                      SignUp
+                    </Link>
+                    <Link
+                      to="/Login"
+                      className="text-white font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50"
+                    >
+                      Login
+                    </Link>
+                    <Link
+                      to="/Contact"
+                      className="text-white  font-medium p-3 hover:text-yellow-300 hover:bg-black hover:bg-opacity-50"
+                    >
+                      Contact Us
+                    </Link>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </header>
       <hr className="opacity-10" />
@@ -49,10 +104,10 @@ export const Home = () => {
     "https://img.freepik.com/free-photo/turned-gray-laptop-computer_400718-47.jpg?w=996&t=st=1703253716~exp=1703254316~hmac=ff43d7ee5f186e611adec42f94f90de59b1f9476ee445ebd26feb945f6059028";
   return (
     <>
-      <div className="home-container lg:flex lg:justify-center lg:items-center mt-5">
+      <div className="home-container flex justify-center items-center sm:flex-col sm:border-box mt-5">
         <div className="home-content lg:grid lg:grid-cols-2 lg:w-[80%]">
           <div className="home-right lg:w-2/3 p-5 rounded border-[2px solid white]">
-            <h1 className="text-white text-yellow-500 text-4xl font-semibold p-5">
+            <h1 className=" text-yellow-500 text-4xl font-semibold p-5">
               Welcome to Pindari Coders!
             </h1>
             <p className="text-white mt-4 p-5">
@@ -70,22 +125,22 @@ export const Home = () => {
               digital era.
             </p>
           </div>
-          <div className="home-left lg:w-full  p-5 rounded border-[2px solid white]">
+          <div className="home-left w-full  p-5 rounded border-[2px solid white]">
             <img
               src={img}
               alt="Computer"
-              className="w-full h-full opacity-50 rounded-full"
+              className="w-full h-full  rounded-full overflow-hidden opacity-50"
             />
           </div>
         </div>
       </div>
       <hr className="mt-4 opacity-10" />
       <div className="why">
-        <h1 className="text-4xl font-semibold text-yellow-400 text-center mt-5">
+        <h1 className="text-4xl font-semibold text-yellow-400 text-center sm:text-5xl sm:flex sm:justify-center sm:items-center sm:flex-wrap  mt-5">
           Why Pindari Coders?
         </h1>
-        <div className="cards mt-5 flex justify-around items-center flex-wrap gap-4 p-5 ">
-          <div className="card p-5 w-1/5 h-[300px] flex justify-center items-center bg-white relative  bg-opacity-40 rounded-xl">
+        <div className="cards mt-5 flex  xsm:flex-col lg:flex-row justify-around items-center flex-wrap gap-4 xsm:p-10 lg:p-5 sm:p-5 ">
+          <div className="card p-5 h-[300px] xsm:w-full xsm:h-[300px]  md:w-1/5  flex justify-center items-center bg-white relative  bg-opacity-40 rounded-xl">
             <div className="card-content">
               <h1 className="text-2xl select-none text-center font-semibold absolute right-8 left-10 top-16 text-yellow-400 flex justify-center items-center gap-2">
                 Courses
@@ -109,7 +164,7 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card p-5 w-1/5 h-[300px] flex justify-center items-center bg-white relative  bg-opacity-40 rounded-xl">
+          <div className="card p-5 h-[300px] xsm:w-full xsm:h-[300px]  md:w-1/5  flex justify-center items-center bg-white relative  bg-opacity-40 rounded-xl">
             <div className="card-content">
               <h1 className="text-2xl text-center select-none font-semibold absolute right-8 left-10 top-16 text-yellow-400 flex justify-center items-center gap-2">
                 Tutorials
@@ -133,9 +188,9 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card p-5 w-1/5 h-[300px] flex justify-center items-center bg-white  bg-opacity-40 rounded-xl relative">
+          <div className="card p-5  h-[300px] xsm:w-full xsm:h-[300px]  md:w-1/5  flex justify-center items-center bg-white  bg-opacity-40 rounded-xl relative">
             <div className="card-content">
-              <h1 className="text-2xl text-center font-semibold select-none flex justify-center items-center gap-2 absolute right-8 top-16  text-yellow-400">
+              <h1 className="text-2xl text-center font-semibold select-none flex justify-center items-center gap-2 absolute xsm:right-2 right-8 top-16  text-yellow-400">
                 Collaboration
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +212,7 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card p-5 w-1/5 h-[300px] flex justify-center items-center bg-white relative  bg-opacity-40 rounded-xl">
+          <div className="card p-5  h-[300px] xsm:w-full  md:w-1/5 flex justify-center items-center bg-white relative  bg-opacity-40 rounded-xl">
             <div className="card-content">
               <h1 className="text-2xl select-none text-center font-semibold text-yellow-400 absolute right-8 left-10 top-16 flex justify-center items-center gap-2">
                 Support
@@ -188,7 +243,7 @@ export const Home = () => {
         <h2 className="about-us-title  mb-6 text-4xl font-semibold text-yellow-400">
           About Us
         </h2>
-        <div className="founders flex  gap-16 justify-around">
+        <div className="founders xsm:flex xsm:flex-col lg:flex lg:flex-row gap-16 justify-around">
           <div className="founder mx-4">
             <img
               className="founder-image object-cover rounded-full"
